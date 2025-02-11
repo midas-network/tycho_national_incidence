@@ -71,6 +71,10 @@ specific years) level on the census.gov website:
 - Data from [2000 to 2010](https://www.census.gov/data/tables/time-series/demo/popest/intercensal-2000-2010-national.html)
 - Data from [2010 to 2020](https://www.census.gov/programs-surveys/popest/technical-documentation/research/evaluation-estimates/2020-evaluation-estimates/2010s-national-detail.html)
 
+## Data Processing Pipeline
+
+Scripts in the `src` directory pull data from Zenodo and census to create processed data stored in the `process_data` directory.  The data are also duplicated in the `raw` directory.
+
 ## Output
 
 The Visualization folder contains multiple outputs files and code in a quarto file
