@@ -73,9 +73,32 @@ specific years) level on the census.gov website:
 
 ## Data Processing Pipeline
 
-Scripts in the `src` directory pull data from Zenodo and census to create processed data stored in the `process_data` directory.  The data are also duplicated in the `raw` directory.
+Scripts in the `src` directory pull data from Zenodo and census to create 
+processed data stored in the `process_data` directory.  The raw data are 
+also stored in the `raw` directory.
 
 ## Output
+
+### Data
+
+The output of the data processing pipeline is available in the `process_data` 
+directory.
+
+The directory contains 4 files:
+
+- `census.csv`: population size per year and location (state, national) since
+1900 to 2023.
+- `national_incidence_rate_lvl1.csv`: case count (`"value"`) and incidence rate
+per 100,000 (`"incidence_rate"`) per disease and per week (`"date"`). For each
+disease, the vaccine introduction year (extracted from the NEJM article) is 
+available and set to the first day of the year for visualization purposes 
+(`"vaccine"`)
+- `vaccine_year_introduction.csv`: year of the vaccine introduction for each
+disease of interest (extracted from the NEJM article).
+- `sysdata.rda`: internal location dictionary to help with standardizing 
+location name in between different sources.
+
+### Visualization
 
 The Visualization folder contains multiple outputs files and code in a quarto file
 to generate them.
