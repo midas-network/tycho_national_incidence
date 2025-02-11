@@ -23,6 +23,12 @@ These data have been used by investigators at the University of Pittsburgh to
 estimate the impact of vaccination programs in the United States, published in 
 the New England Journal of Medicine.
 
+Raw data at the city/state level are mirrored at [raw/tycho_level1/ProjectTycho_Level1_v1.0.0.csv](https://github.com/midas-network/tycho_national_incidence/blob/main/raw/tycho_level1/ProjectTycho_Level1_v1.0.0.csv).
+
+Procesed data containing national rates can be found at [process_data/national_incidence_rate_lvl1.csv](https://github.com/midas-network/tycho_national_incidence/blob/main/process_data/national_incidence_rate_lvl1.csv). 
+These ratese were calculated by adding all the state or city together per epi week and disease, and then calculating the incidence rate per 100,000 by applying: number of cases divided by the population size, multiplied by 100,000.
+
+
 ### Additional Information
 
 #### Measles
