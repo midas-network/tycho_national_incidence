@@ -73,9 +73,8 @@ specific years) level on the census.gov website:
 
 ## Data Processing Pipeline
 
-Scripts in the `src` directory pull data from Zenodo and census to create 
-processed data stored in the `process_data` directory.  The raw data are 
-also stored in the `raw` directory.
+Scripts in the `src` directory pull data from Zenodo and census and prepare data for processing. 
+These data are also mirrored in the `raw` direcotry.
 
 ## Output
 
